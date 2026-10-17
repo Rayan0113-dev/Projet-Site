@@ -1,0 +1,134 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Mon site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="app">
+  <header class="topbar">
+    <div class="logo">Site<span>Pilot</span></div>
+    <span class="status">Prototype v1.0</span>
+  </header>
+
+  <section class="intro">
+    <p class="eyebrow">TON BUSINESS, TON SITE</p>
+    <h1>Crée un site à ton image.</h1>
+    <p>Choisis un modèle, personnalise-le et découvre ton tarif.</p>
+  </section>
+
+  <main class="workspace">
+    <section class="editor panel">
+      <h2>Personnalise ton site</h2>
+      <p class="muted">Modifie les informations ci-dessous.</p>
+
+      <label for="template">1. Modèle de départ</label>
+      <select id="template">
+        <option value="artisan">Artisan</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="coach">Coach indépendant</option>
+      </select>
+
+      <label for="businessName">2. Nom de ton activité</label>
+      <input id="businessName" value="Atelier Horizon"
+             maxlength="60" placeholder="Nom de l'activité">
+
+      <label for="tagline">3. Phrase de présentation</label>
+      <textarea id="tagline" maxlength="180"
+        placeholder="Présente ton activité...">Des services de qualité, avec passion et savoir-faire.</textarea>
+
+      <label for="services">4. Tes services</label>
+      <input id="services" value="Conseil, création, accompagnement"
+             maxlength="150" placeholder="Tes services">
+
+      <label for="email">5. Adresse e-mail</label>
+      <input id="email" type="email" value="contact@exemple.fr"
+             maxlength="120" placeholder="contact@exemple.fr">
+
+      <label for="color">6. Couleur principale</label>
+      <div class="color-control">
+        <input id="color" type="color" value="#635bdb">
+        <span id="colorLabel">#635BDB</span>
+      </div>
+
+      <label for="plan">7. Ton forfait</label>
+      <select id="plan">
+        <option value="5">Essentiel — 5 €/mois</option>
+        <option value="12" selected>Professionnel — 12 €/mois</option>
+        <option value="20">Avancé — 20 €/mois</option>
+      </select>
+
+      <div class="options">
+        <label class="check">
+          <input id="domain" type="checkbox" checked>
+          Nom de domaine (+ 2 €/mois estimés)
+        </label>
+        <label class="check">
+          <input id="booking" type="checkbox">
+          Réservations (+ 5 €/mois estimés)
+        </label>
+      </div>
+
+      <button id="reset" class="secondary-btn" type="button">
+        Réinitialiser
+      </button>
+    </section>
+
+    <section class="preview-column">
+      <div class="preview-heading">
+        <h2>Aperçu du résultat</h2>
+        <span class="live"><span></span> En direct</span>
+      </div>
+
+      <div id="website" class="website">
+        <nav class="site-nav">
+          <div id="previewName" class="site-logo">Atelier Horizon</div>
+          <a href="#contact" id="navLink">Contact</a>
+        </nav>
+
+        <section class="hero">
+          <p id="previewType" class="site-tag">ARTISAN & SERVICES</p>
+          <h1 id="previewTitle">Atelier Horizon</h1>
+          <p id="previewTagline">
+            Des services de qualité, avec passion et savoir-faire.
+          </p>
+          <a href="#contact" class="cta">Parlons de ton projet</a>
+        </section>
+
+        <section class="services">
+          <p class="site-tag">CE QUE NOUS PROPOSONS</p>
+          <h2>Nos services</h2>
+          <p id="previewServices">Conseil, création, accompagnement</p>
+        </section>
+
+        <section id="contact" class="contact">
+          <h2>Une question ?</h2>
+          <p>Contacte-nous pour en savoir plus.</p>
+          <a id="previewEmail" href="mailto:contact@exemple.fr">
+            contact@exemple.fr
+          </a>
+        </section>
+
+        <footer id="previewFooter">
+          © 2026 Atelier Horizon
+        </footer>
+      </div>
+
+      <section class="pricing panel">
+        <div>
+          <p class="muted">ESTIMATION DE TON ABONNEMENT</p>
+          <h2 id="price">14 €/mois</h2>
+          <p id="priceDetails">Forfait Professionnel + domaine</p>
+        </div>
+        <span class="price-icon">€</span>
+      </section>
+
+      <p class="disclaimer">
+        Démonstration uniquement : tarifs fictifs, non contractuels.
+      </p>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    SitePilot — Un projet en construction.
+  </footer>
+</div>
